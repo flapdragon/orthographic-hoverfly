@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthographical Hoverfly</title>
+    <!-- <link rel="stylesheet" href="style-01.css"> -->
+    <link rel="stylesheet" href="style-02.css">
+    <link rel="stylesheet" href="style-03.css">
+</head>
+
+<body>
+    <div class="pz-game-field" id="pz-game-root">
+        <div class="sb-content-box">
+            <div class="sb-status-box">
+                <div class="sb-progress-box"><span role="presentation">
+                        <div class="sb-progress" title="Click to see today’s ranks">
+                            <h4 class="sb-progress-rank">Beginner</h4>
+                            <div class="sb-progress-bar">
+                                <div class="sb-progress-line">
+                                    <div class="sb-progress-dots"><span class="sb-progress-dot"></span><span
+                                            class="sb-progress-dot"></span><span class="sb-progress-dot"></span><span
+                                            class="sb-progress-dot"></span><span class="sb-progress-dot"></span><span
+                                            class="sb-progress-dot"></span><span class="sb-progress-dot"></span><span
+                                            class="sb-progress-dot"></span><span class="sb-progress-dot"></span></div>
+                                </div>
+                                <div class="sb-progress-marker" style="left: 0%;"><span
+                                        class="sb-progress-value">0</span></div>
+                            </div>
+                        </div>
+                    </span></div>
+                <div class="sb-wordlist-box">
+                    <div class="sb-wordlist-heading">
+                        <div class="sb-wordlist-heading-wrap sb-touch-button" data-testid="touch-button">
+                            <div id="oh-wordlist-summary" class="sb-wordlist-summary">You have found 0 words</div>
+                            <div class="sb-recent-words-wrap">
+                                <ul class="sb-recent-words">
+                                    <li class="sb-placeholder-text">Your words …</li>
+                                </ul>
+                            </div>
+                            <div class="sb-toggle-expand"><span class="sb-toggle-icon"></span></div>
+                        </div>
+                    </div>
+                    <div class="sb-wordlist-drawer">
+                        <div class="sb-wordlist-window">
+                            <div class="sb-wordlist-pag">
+                                <div class="sb-wordlist-scroll-anchor" style="left: 0%;"></div>
+                                <ul id="oh-wordlist-items" class="sb-wordlist-items-pag"></ul>
+                            </div>
+                            <div class="sb-kebob"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sb-controls-box">
+                <div class="sb-controls">
+                    <div class="sb-message-box"></div>
+                    <div class="sb-hive-input">
+                        <span class="sb-hive-input-content" style="font-size: 1em;">
+                            <span id="oh-hive-input" class="sb-hive-input-placeholder" tabindex="1">Type or click</span>
+                            <!-- <span class="sb-hive-input-placeholder">
+                                <input id="oh-hive-input" type="text" placeholder="Type or click 1">
+                            </span> -->
+                        </span>
+                        <div class="sb-hive-hidden-input">
+                            <span class="sb-hive-input-content" style="font-size: 1em;">
+                                <span class="sb-hive-input-placeholder">Type or click</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sb-hive" data-testid="hive">
+                        <div class="hive"><svg class="hive-cell center" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">t</text>
+                            </svg><svg class="hive-cell outer" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">u</text>
+                            </svg><svg class="hive-cell outer" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">y</text>
+                            </svg><svg class="hive-cell outer" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">o</text>
+                            </svg><svg class="hive-cell outer" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">b</text>
+                            </svg><svg class="hive-cell outer" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">n</text>
+                            </svg><svg class="hive-cell outer" viewBox="0 0 120 103.92304845413263"
+                                data-testid="hive-cell">
+                                <polygon class="cell-fill"
+                                    points="0,51.96152422706631 30,0 90,0 120,51.96152422706631 90,103.92304845413263 30,103.92304845413263"
+                                    stroke="white" stroke-width="7.5"></polygon><text class="cell-letter" x="50%"
+                                    y="50%" dy="0.35em">a</text>
+                            </svg></div>
+                    </div>
+                    <div class="hive-actions">
+                        <div class="hive-action hive-action__submit sb-touch-button" data-testid="touch-button">Enter
+                        </div>
+                        <div class="hive-action hive-action__delete sb-touch-button" data-testid="touch-button">Delete
+                        </div>
+                        <div class="hive-action hive-action__shuffle sb-touch-button" data-testid="touch-button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="application/javascript" src="index.js"></script>
+</body>
+</html>
