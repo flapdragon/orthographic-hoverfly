@@ -58,17 +58,19 @@
                 <div class="sb-controls">
                     <div class="sb-message-box"></div>
                     <div class="sb-hive-input">
+                        <!-- <span class="sb-hive-input-content" style="font-size: 1em;">
+                            <span id="oh-hive-input" class="sb-hive-input-placeholder" tabindex="1" contenteditable="true">Type or click</span>
+                        </span> -->
                         <span class="sb-hive-input-content" style="font-size: 1em;">
-                            <span id="oh-hive-input" class="sb-hive-input-placeholder" tabindex="1">Type or click</span>
-                            <!-- <span class="sb-hive-input-placeholder">
-                                <input id="oh-hive-input" type="text" placeholder="Type or click 1">
-                            </span> -->
+                            <span class="sb-hive-input-placeholder">
+                                <input id="oh-hive-input" type="text" placeholder="Type or click" onkeydown="keyHandler(event)"> <!-- onkeydown="keyHandler(event)" pattern="[a-zA-Z]*" -->
+                            </span>
                         </span>
-                        <div class="sb-hive-hidden-input">
+                        <!-- <div class="sb-hive-hidden-input">
                             <span class="sb-hive-input-content" style="font-size: 1em;">
                                 <span class="sb-hive-input-placeholder">Type or click</span>
                             </span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="sb-hive" data-testid="hive">
                         <div class="hive"><svg class="hive-cell center" viewBox="0 0 120 103.92304845413263"

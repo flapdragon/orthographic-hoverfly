@@ -1,12 +1,13 @@
-/* #oh-hive-input {
+#oh-hive-input {
     border: none;
     font-weight: 500;
     font-size: 1.5rem;
     color: #959595;
     text-transform: none;
     letter-spacing: 0;
+    outline: none;
 }
 
 #oh-hive-input:focus, #oh-hive-input:active {
-    border: none !important;
-} */
+    outline: none;
+}
